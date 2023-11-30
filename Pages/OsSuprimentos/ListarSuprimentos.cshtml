@@ -1,0 +1,44 @@
+@page
+@model Hotelmanagment.Pages_OsSuprimentos.ListarSuprimentosModel
+
+@{
+    ViewData["Title"] = "ListarSuprimentos";
+}
+
+<h1>ListarSuprimentos</h1>
+
+<p>
+    <a asp-page="CadastrarSuprimentos">Create New</a>
+</p>
+<table class="table" id="myTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Suprimentos[0].Suprimento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Suprimentos[0].DataCreat)
+            </th>
+           
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Suprimentos) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Suprimento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataCreat)
+            </td>
+           
+            <td>
+                <a asp-page="./EditarSuprimentos" asp-route-id="@item.Codigo">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Codigo">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Codigo">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

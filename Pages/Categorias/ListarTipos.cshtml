@@ -1,0 +1,54 @@
+@page
+@model Hotelmanagment.Pages_Categorias.ListarTiposModel
+
+@{
+    ViewData["Title"] = "ListarTipos";
+}
+
+<h1>ListarTipos</h1>
+
+<p>
+    <a asp-page="CriarTipos">Create New</a>
+</p>
+<table class="table" id="myTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Tiposdequarto[0].Tipodquarto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tiposdequarto[0].Descricao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tiposdequarto[0].DataCreat)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tiposdequarto[0].Usercreat)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Tiposdequarto) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tipodquarto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataCreat)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usercreat)
+            </td>
+            <td>
+                <a asp-page="./EditarTipos" asp-route-id="@item.Codigo">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Codigo">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Codigo">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

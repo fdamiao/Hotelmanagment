@@ -1,0 +1,107 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Hotelmanagment
+build_property.RootNamespace = Hotelmanagment
+build_property.ProjectDir = C:\Meus projectos\Hotelmanagment\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Meus projectos\Hotelmanagment
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Meus projectos/Hotelmanagment/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meus projectos/Hotelmanagment/Pages/Categorias/CriarTipos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmlhc1xDcmlhclRpcG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meus projectos/Hotelmanagment/Pages/Categorias/EditarTipos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmlhc1xFZGl0YXJUaXBvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meus projectos/Hotelmanagment/Pages/Categorias/ListarTipos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2F0ZWdvcmlhc1xMaXN0YXJUaXBvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meus projectos/Hotelmanagment/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meus projectos/Hotelmanagment/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meus projectos/Hotelmanagment/Pages/OsClentes/CadastrarClientes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3NDbGVudGVzXENhZGFzdHJhckNsaWVudGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meus projectos/Hotelmanagment/Pages/OsClentes/EditarClientes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3NDbGVudGVzXEVkaXRhckNsaWVudGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meus projectos/Hotelmanagment/Pages/OsClentes/ListarClientes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3NDbGVudGVzXExpc3RhckNsaWVudGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meus projectos/Hotelmanagment/Pages/OsQuartos/CadastrarQuartos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3NRdWFydG9zXENhZGFzdHJhclF1YXJ0b3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meus projectos/Hotelmanagment/Pages/OsQuartos/ListarQuartos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3NRdWFydG9zXExpc3RhclF1YXJ0b3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meus projectos/Hotelmanagment/Pages/OsSuprimentos/CadastrarSuprimentos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3NTdXByaW1lbnRvc1xDYWRhc3RyYXJTdXByaW1lbnRvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meus projectos/Hotelmanagment/Pages/OsSuprimentos/EditarSuprimentos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3NTdXByaW1lbnRvc1xFZGl0YXJTdXByaW1lbnRvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meus projectos/Hotelmanagment/Pages/OsSuprimentos/ListarSuprimentos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3NTdXByaW1lbnRvc1xMaXN0YXJTdXByaW1lbnRvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meus projectos/Hotelmanagment/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meus projectos/Hotelmanagment/Pages/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meus projectos/Hotelmanagment/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meus projectos/Hotelmanagment/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meus projectos/Hotelmanagment/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meus projectos/Hotelmanagment/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-sodhkib5r8

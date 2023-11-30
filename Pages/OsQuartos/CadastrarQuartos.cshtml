@@ -1,0 +1,78 @@
+@page
+@model Hotelmanagment.Pages_OsQuartos.CadastrarQuartosModel
+@using HotelManagment.Modelos
+@{
+    ViewData["Title"] = "CadastrarQuartos";
+}
+
+<h1>CadastrarQuartos</h1>
+
+<h4>Quartos</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Quartos.Nquarto" class="control-label"></label>
+                <input asp-for="Quartos.Nquarto" class="form-control" />
+                <span asp-validation-for="Quartos.Nquarto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quartos.Tipodquarto" class="control-label"></label>
+                <select asp-for="Quartos.Tipodquarto" class="form-control" asp-items="Model.customerList" ></select>
+                <span asp-validation-for="Quartos.Tipodquarto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quartos.Nocupantes" class="control-label"></label>
+                <input asp-for="Quartos.Nocupantes" class="form-control" />
+                <span asp-validation-for="Quartos.Nocupantes" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quartos.Voip" class="control-label"></label>
+                <input asp-for="Quartos.Voip" class="form-control" />
+                <span asp-validation-for="Quartos.Voip" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quartos.Preco" class="control-label"></label>
+                <input asp-for="Quartos.Preco" class="form-control" />
+                <span asp-validation-for="Quartos.Preco" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quartos.Desponibilidade" class="control-label"></label>
+                <select asp-for="Quartos.Desponibilidade" class="form-control Selectingle" asp-items="@Html.GetEnumSelectList<Despon>()"></select>
+                <span asp-validation-for="Quartos.Desponibilidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quartos.Localizacao" class="control-label"></label>
+                <input asp-for="Quartos.Localizacao" class="form-control" />
+                <span asp-validation-for="Quartos.Localizacao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quartos.Tipodecamas" class="control-label"></label>
+                <select asp-for="Quartos.Tipodecamas" class="form-control Selectingle" asp-items="@Html.GetEnumSelectList<Tpcamas>()"></select>
+                <span asp-validation-for="Quartos.Tipodecamas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quartos.Fotodolin" class="control-label"></label>
+                <input asp-for="Quartos.Fotodolin" class="form-control" />
+                <span asp-validation-for="Quartos.Fotodolin" class="text-danger"></span>
+            </div>
+            
+            @for(int i=0;i<Model.LSuprimentos.Count;i++)
+            {
+<input asp-for="LSuprimentos[i].Value" type="hidden" class="form-Control">
+<input asp-for="LSuprimentos[i].Selected"  class="form-chek-input"/>@Model.LSuprimentos[i].Text
+            }        
+          
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+

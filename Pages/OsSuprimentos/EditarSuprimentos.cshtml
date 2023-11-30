@@ -1,0 +1,42 @@
+@page
+@model Hotelmanagment.Pages_OsSuprimentos.EditarSuprimentosModel
+
+@{
+    ViewData["Title"] = "EditarSuprimentos";
+}
+
+<h1>EditarSuprimentos</h1>
+
+<h4>Suprimentos</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Suprimentos.Suprimento" class="control-label"></label>
+                <input asp-for="Suprimentos.Suprimento" class="form-control" />
+                <span asp-validation-for="Suprimentos.Suprimento" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="Suprimentos.Codigo" />
+            <div class="form-group">
+                <label asp-for="Suprimentos.DataCreat" class="control-label"></label>
+                <input asp-for="Suprimentos.DataCreat" class="form-control" />
+                <span asp-validation-for="Suprimentos.DataCreat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Suprimentos.Usercreat" class="control-label"></label>
+                <input asp-for="Suprimentos.Usercreat" class="form-control" />
+                <span asp-validation-for="Suprimentos.Usercreat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+

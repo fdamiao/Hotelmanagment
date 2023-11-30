@@ -1,0 +1,47 @@
+@page
+@model Hotelmanagment.Pages_OsClentes.CadastrarClientesModel
+
+@{
+    ViewData["Title"] = "CadastrarClientes";
+}
+
+<h1>CadastrarClientes</h1>
+
+<h4>Clientes</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Clientes.CodigoCLi" class="control-label"></label>
+                <input asp-for="Clientes.CodigoCLi" class="form-control" />
+                <span asp-validation-for="Clientes.CodigoCLi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Clientes.Nome" class="control-label"></label>
+                <input asp-for="Clientes.Nome" class="form-control" />
+                <span asp-validation-for="Clientes.Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Clientes.Ntelefone" class="control-label"></label>
+                <input asp-for="Clientes.Ntelefone" class="form-control" />
+                <span asp-validation-for="Clientes.Ntelefone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Clientes.Nacionalidade" class="control-label"></label>
+                <input asp-for="Clientes.Nacionalidade" class="form-control" />
+                <span asp-validation-for="Clientes.Nacionalidade" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+

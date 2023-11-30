@@ -1,0 +1,46 @@
+@page
+@model Hotelmanagment.Pages_Categorias.CriarTiposModel
+
+@{
+    ViewData["Title"] = "CriarTipos";
+}
+
+<h1>CriarTipos</h1>
+
+<h4>Tiposdequarto</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Tiposdequarto.Tipodquarto" class="control-label"></label>
+                <input asp-for="Tiposdequarto.Tipodquarto" class="form-control" />
+                <span asp-validation-for="Tiposdequarto.Tipodquarto" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tiposdequarto.Descricao" class="control-label"></label>
+                <input asp-for="Tiposdequarto.Descricao" class="form-control" />
+                <span asp-validation-for="Tiposdequarto.Descricao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tiposdequarto.DataCreat" class="control-label"></label>
+                <input asp-for="Tiposdequarto.DataCreat" class="form-control" />
+                <span asp-validation-for="Tiposdequarto.DataCreat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tiposdequarto.Usercreat" class="control-label"></label>
+                <input asp-for="Tiposdequarto.Usercreat" class="form-control" />
+                <span asp-validation-for="Tiposdequarto.Usercreat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+

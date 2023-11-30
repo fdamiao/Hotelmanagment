@@ -1,0 +1,62 @@
+@page
+@model Hotelmanagment.Pages_OsClentes.ListarClientesModel
+
+@{
+    ViewData["Title"] = "ListarClientes";
+}
+
+<h1>ListarClientes</h1>
+
+<p>
+    <a asp-page="CadastrarClientes">Create New</a>
+</p>
+<table class="table table-border " id="myTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Clientes[0].CodigoCLi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clientes[0].Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clientes[0].Ntelefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clientes[0].Nacionalidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Clientes[0].DataCreat)
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Clientes) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodigoCLi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ntelefone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nacionalidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataCreat)
+            </td>
+           
+            <td>
+                <a asp-page="./ListarClientes" asp-route-id="@item.Codigo">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Codigo">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Codigo">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

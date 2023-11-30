@@ -1,0 +1,86 @@
+@page
+@model Hotelmanagment.Pages_OsQuartos.ListarQuartosModel
+
+@{
+    ViewData["Title"] = "ListarQuartos";
+}
+
+<h1>ListarQuartos</h1>
+
+<p>
+    <a asp-page="CadastrarQuartos">Create New</a>
+</p>
+<table class="table" id="myTable">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Quartos[0].Nquarto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quartos[0].Tipodquarto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quartos[0].Nocupantes)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quartos[0].Voip)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quartos[0].Preco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quartos[0].Desponibilidade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quartos[0].Localizacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quartos[0].Tipodecamas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quartos[0].Fotodoquarto)
+            </th>
+           
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Quartos) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nquarto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tipodquarto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nocupantes)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Voip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Preco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Desponibilidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Localizacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tipodecamas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fotodoquarto)
+            </td>
+            
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Codigo">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Codigo">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Codigo">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
